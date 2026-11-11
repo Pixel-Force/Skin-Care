@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 44" fill="none">
+  <rect x="2" y="4" width="36" height="36" rx="12" fill="#AC987D"/>
+  <path d="M20 11C20 11 28 17.5 28 24C28 28.4183 24.4183 32 20 32C15.5817 32 12 28.4183 12 24C12 17.5 20 11 20 11Z" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 17V28M16.5 23.5C17.8 24.8 19 25.4 20 25.4C21 25.4 22.2 24.8 23.5 23.5" stroke="#FCFCFC" stroke-width="1.75" stroke-linecap="round"/>
+  <text x="48" y="28" fill="#1C1C1C" font-family="Manrope, -apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.03em">Skin Care</text>
+</svg>

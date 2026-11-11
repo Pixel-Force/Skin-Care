@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Skin Care</title>
+  <meta name="description" content="Learn about Skin Care's board-certified dermatologists, clinical mission, core values, and clinic locations." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="sc-header">
+    <div class="sc-container sc-header-inner">
+      <a href="index.html" class="sc-logo" aria-label="Skin Care Home"><img src="assets/images/logo.svg" alt="Skin Care Logo" /></a>
+      <nav class="sc-nav" aria-label="Primary Navigation">
+        <div class="sc-nav-item"><a href="index.html" class="sc-nav-link">Home</a></div>
+        <div class="sc-nav-item"><a href="about-us.html" class="sc-nav-link is-active">About Us</a></div>
+        <div class="sc-nav-item">
+          <a href="services.html" class="sc-nav-link">Services &#9662;</a>
+          <div class="sc-dropdown">
+            <a href="services.html">All Services</a>
+            <a href="service-details.html">Service Details</a>
+          </div>
+        </div>
+        <div class="sc-nav-item">
+          <a href="#" class="sc-nav-link">Pages &#9662;</a>
+          <div class="sc-dropdown">
+            <a href="doctors.html">Doctors</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="appointment.html">Appointment</a>
+            <a href="help-center.html">Help Center</a>
+            <a href="404.html">404 Page</a>
+          </div>
+        </div>
+        <div class="sc-nav-item"><a href="contact-us.html" class="sc-nav-link">Contact Us</a></div>
+      </nav>
+      <div class="sc-header-actions">
+        <button type="button" class="sc-icon-btn" data-open-search aria-label="Search clinic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
+        <button type="button" class="sc-btn sc-btn-dark sc-btn-sm" data-open-appointment>Book Appointment</button>
+        <button type="button" class="sc-icon-btn sc-mobile-toggle" id="scMobileOpenBtn" aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sc-mobile-drawer" id="scMobileDrawer">
+    <div class="sc-mobile-panel">
+      <div style="display:flex;justify-content:space-between;align-items:center;"><img src="assets/images/logo.svg" alt="Skin Care" style="height:34px;" /><button type="button" class="sc-modal-close" id="scMobileCloseBtn">&times;</button></div>
+      <div class="sc-mobile-links">
+        <a href="index.html">Home</a><a href="about-us.html" class="is-active">About Us</a>
+        <div class="sc-mobile-group-label">Services</div><a href="services.html">All Services</a><a href="service-details.html">Service Details</a>
+        <div class="sc-mobile-group-label">Pages</div><a href="doctors.html">Doctors</a><a href="pricing.html">Pricing</a><a href="appointment.html">Appointment</a><a href="help-center.html">Help Center</a><a href="contact-us.html">Contact Us</a>
+      </div>
+      <button type="button" class="sc-btn sc-btn-dark" data-open-appointment style="margin-top:auto;">Book Appointment</button>
+    </div>
+  </div>
+
+  <section class="sc-page-banner">
+    <div class="sc-container sc-page-banner-inner">
+      <div>
+        <div class="sc-breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>About Us</span></div>
+        <h1>Caring for Your Skin, Backed by Medical Expertise</h1>
+      </div>
+      <button type="button" class="sc-btn sc-btn-dark" data-open-appointment>Book Appointment &rarr;</button>
+    </div>
+  </section>
+
+  <!-- About & Mission -->
+  <section class="sc-section">
+    <div class="sc-container">
+      <div class="sc-about-grid">
+        <div class="sc-about-left">
+          <div class="sc-about-card-img"><img src="assets/images/about-radiance.jpg" alt="Healthy radiant skin" /></div>
+          <div class="sc-mission-card">
+            <h3>Our Mission</h3>
+            <p>We combine evidence-based dermatology with gentle barrier-first protocols so every patient understands their skin and achieves measurable, lasting clarity.</p>
+            <div class="sc-btn-group">
+              <button type="button" class="sc-btn sc-btn-dark" data-open-appointment>Book a Consultation</button>
+              <a href="contact-us.html" class="sc-btn sc-btn-outline">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="sc-about-right">
+          <div class="sc-about-visual-wrap">
+            <img src="assets/images/about-consultation.jpg" alt="Skin Care consultation" />
+            <div class="sc-floating-stats">
+              <div class="sc-float-stat"><strong>100+</strong><span>Advanced clinical treatment suites</span></div>
+              <div class="sc-float-stat"><strong>50+</strong><span>Clinical safety &amp; dermatology honors</span></div>
+            </div>
+          </div>
+          <div class="sc-vision-box">
+            <div class="sc-vision-badge"><span>01</span></div>
+            <div>
+              <h4>Our Vision</h4>
+              <p style="margin-top:6px;">To deliver trusted, personalized dermatology care for long-term skin health and natural confidence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 Core Values -->
+  <section class="sc-section" style="background:var(--sc-sand);">
+    <div class="sc-container">
+      <div class="sc-section-header">
+        <div class="sc-section-header-main">
+          <span class="sc-eyebrow">Our Principles</span>
+          <h2>Six Pillars of Clinical Skin Excellence</h2>
+        </div>
+        <p class="sc-section-header-sub">Every consultation and follow-up visit is shaped around diagnostic clarity, safety, and long-term skin resilience.</p>
+      </div>
+      <div class="sc-values-grid">
+        <div class="sc-value-card"><div class="sc-value-top"><span class="sc-value-num">01</span><span class="sc-value-icon">&#10022;</span></div><h3>Clinical Excellence</h3><p>Board-certified dermatologists using peer-reviewed medical protocols for accurate diagnosis.</p></div>
+        <div class="sc-value-card"><div class="sc-value-top"><span class="sc-value-num">02</span><span class="sc-value-icon">&#9825;</span></div><h3>Personalized Care</h3><p>Custom treatment plans tailored to your skin type, sensitivity level, and daily routine.</p></div>
+        <div class="sc-value-card"><div class="sc-value-top"><span class="sc-value-num">03</span><span class="sc-value-icon">&#9673;</span></div><h3>Advanced Technology</h3><p>FDA-cleared light, laser, and digital dermal imaging devices calibrated across all skin tones.</p></div>
+        <div class="sc-value-card"><div class="sc-value-top"><span class="sc-value-num">04</span><span class="sc-value-icon">&#10003;</span></div><h3>Patient Trust</h3><p>Transparent recommendations, clear timelines, and upfront care pricing with zero pressure.</p></div>
+        <div class="sc-value-card"><div class="sc-value-top"><span class="sc-value-num">05</span><span class="sc-value-icon">&#9788;</span></div><h3>Healthy Skin Barrier</h3><p>Gentle, barrier-protective actives that strengthen hydration and calm inflammation.</p></div>
+        <div class="sc-value-card"><div class="sc-value-top"><span class="sc-value-num">06</span><span class="sc-value-icon">&#8734;</span></div><h3>Long-Term Results</h3><p>Structured 90-day check-ins and seasonal adjustments so your progress endures.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise Progress Bars -->
+  <section class="sc-section">
+    <div class="sc-container">
+      <div class="sc-expertise-grid">
+        <div class="sc-expertise-media"><img src="assets/images/expertise-treatment.jpg" alt="Dermatology procedure" /></div>
+        <div>
+          <span class="sc-eyebrow">Our Expertise</span>
+          <h2>Advanced Dermatology Expertise</h2>
+          <p style="margin-top:14px;">Measured clinical outcomes across acne management, pigment correction, and skin longevity therapies.</p>
+          <div class="sc-progress-list">
+            <div><div class="sc-progress-head"><span>Advanced Acne Treatment</span><span>98%</span></div><div class="sc-progress-track"><div class="sc-progress-fill" data-width="98"></div></div></div>
+            <div><div class="sc-progress-head"><span>Pigmentation &amp; Skin Tone Therapy</span><span>90%</span></div><div class="sc-progress-track"><div class="sc-progress-fill" data-width="90"></div></div></div>
+            <div><div class="sc-progress-head"><span>Anti-Aging &amp; Rejuvenation Care</span><span>85%</span></div><div class="sc-progress-track"><div class="sc-progress-fill" data-width="85"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clinic Branches -->
+  <section class="sc-section" style="background:var(--sc-sand);">
+    <div class="sc-container">
+      <div class="sc-section-header">
+        <div class="sc-section-header-main">
+          <span class="sc-eyebrow">Find Us Near You</span>
+          <h2>Conveniently Located for Your Care</h2>
+        </div>
+        <div class="sc-pill-tabs" style="margin-bottom:0;">
+          <button type="button" class="sc-pill-tab is-active" data-branch-id="downtown">Skin Care Downtown</button>
+          <button type="button" class="sc-pill-tab" data-branch-id="westside">Skin Care Westside</button>
+          <button type="button" class="sc-pill-tab" data-branch-id="eastend">Skin Care East End</button>
+        </div>
+      </div>
+      <div class="sc-hours-grid">
+        <div class="sc-form-card">
+          <h3>Branch Details</h3>
+          <div style="display:grid;gap:14px;margin:20px 0 26px;">
+            <div><strong style="color:var(--sc-charcoal);display:block;">Address</strong><span id="scBranchAddress">120 Mercer Avenue, Suite 500, New York, NY 10012</span></div>
+            <div><strong style="color:var(--sc-charcoal);display:block;">Clinic Hours</strong><span id="scBranchHours">Mon – Fri: 08:00 – 20:00 | Sat: 09:00 – 17:00</span></div>
+            <div><strong style="color:var(--sc-charcoal);display:block;">Direct Line</strong><span id="scBranchPhone">+1 (800) 555-0194</span></div>
+          </div>
+          <button type="button" class="sc-btn sc-btn-dark" data-open-appointment>Book at This Branch &rarr;</button>
+        </div>
+        <div class="sc-hours-media" style="height:360px;">
+          <iframe id="scBranchMap" title="Clinic Location Map" src="https://maps.google.com/maps?q=SoHo,%20New%20York,%20NY&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="sc-section">
+    <div class="sc-container">
+      <div class="sc-join-grid">
+        <div class="sc-join-media"><img src="assets/images/awards-clinic.jpg" alt="Recognized dermatology team" /></div>
+        <div>
+          <span class="sc-eyebrow">Awards &amp; Recognition</span>
+          <h2>Recognized for Excellence in Dermatology Care</h2>
+          <ul class="sc-checklist">
+            <li><span class="sc-check-dot">&#10003;</span><span>Trusted Healthcare Service Recognition</span></li>
+            <li><span class="sc-check-dot">&#10003;</span><span>Excellence in Aesthetic Care</span></li>
+            <li><span class="sc-check-dot">&#10003;</span><span>Excellence in Clinical Dermatology</span></li>
+          </ul>
+          <button type="button" class="sc-btn sc-btn-dark" data-open-appointment>Book Appointment &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sc-footer">
+    <div class="sc-container">
+      <div class="sc-footer-top">
+        <div class="sc-footer-brand"><a href="index.html" class="sc-logo"><img src="assets/images/logo-light.svg" alt="Skin Care Logo" /></a><p>Evidence-based dermatology and gentle aesthetic treatments designed for lifelong skin health.</p></div>
+        <div class="sc-footer-col"><h4>Company</h4><ul><li><a href="about-us.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="doctors.html">Our Specialists</a></li><li><a href="contact-us.html">Clinic Branches</a></li></ul></div>
+        <div class="sc-footer-col"><h4>Resources</h4><ul><li><a href="service-details.html">Treatment Guides</a></li><li><a href="pricing.html">Skincare Packages</a></li><li><a href="appointment.html">Schedule Visit</a></li><li><a href="help-center.html">Patient FAQ</a></li></ul></div>
+        <div class="sc-footer-col"><h4>Help</h4><ul><li><a href="help-center.html">Customer Support</a></li><li><a href="appointment.html">Booking Policy</a></li><li><a href="contact-us.html">Terms &amp; Conditions</a></li><li><a href="contact-us.html">Privacy Policy</a></li></ul></div>
+      </div>
+      <div class="sc-footer-bottom"><span>Copyright &copy; 2026 Skin Care. All rights reserved.</span><span>Clinical Dermatology &amp; Aesthetic Care</span></div>
+    </div>
+  </footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

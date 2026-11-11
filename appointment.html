@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointment — Skin Care</title>
+  <meta name="description" content="Schedule your dermatology consultation online or open the instant Book Appointment popup form." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="sc-header">
+    <div class="sc-container sc-header-inner">
+      <a href="index.html" class="sc-logo"><img src="assets/images/logo.svg" alt="Skin Care Logo" /></a>
+      <nav class="sc-nav">
+        <div class="sc-nav-item"><a href="index.html" class="sc-nav-link">Home</a></div>
+        <div class="sc-nav-item"><a href="about-us.html" class="sc-nav-link">About Us</a></div>
+        <div class="sc-nav-item">
+          <a href="services.html" class="sc-nav-link">Services &#9662;</a>
+          <div class="sc-dropdown"><a href="services.html">All Services</a><a href="service-details.html">Service Details</a></div>
+        </div>
+        <div class="sc-nav-item">
+          <a href="#" class="sc-nav-link is-active">Pages &#9662;</a>
+          <div class="sc-dropdown"><a href="doctors.html">Doctors</a><a href="pricing.html">Pricing</a><a href="appointment.html" class="is-active">Appointment</a><a href="help-center.html">Help Center</a><a href="404.html">404 Page</a></div>
+        </div>
+        <div class="sc-nav-item"><a href="contact-us.html" class="sc-nav-link">Contact Us</a></div>
+      </nav>
+      <div class="sc-header-actions">
+        <button type="button" class="sc-icon-btn" data-open-search aria-label="Search clinic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
+        <button type="button" class="sc-btn sc-btn-dark sc-btn-sm" data-open-appointment>Book Appointment</button>
+        <button type="button" class="sc-icon-btn sc-mobile-toggle" id="scMobileOpenBtn" aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sc-mobile-drawer" id="scMobileDrawer">
+    <div class="sc-mobile-panel">
+      <div style="display:flex;justify-content:space-between;align-items:center;"><img src="assets/images/logo.svg" alt="Skin Care" style="height:34px;" /><button type="button" class="sc-modal-close" id="scMobileCloseBtn">&times;</button></div>
+      <div class="sc-mobile-links">
+        <a href="index.html">Home</a><a href="about-us.html">About Us</a>
+        <div class="sc-mobile-group-label">Services</div><a href="services.html">All Services</a><a href="service-details.html">Service Details</a>
+        <div class="sc-mobile-group-label">Pages</div><a href="doctors.html">Doctors</a><a href="pricing.html">Pricing</a><a href="appointment.html" class="is-active">Appointment</a><a href="help-center.html">Help Center</a><a href="contact-us.html">Contact Us</a>
+      </div>
+      <button type="button" class="sc-btn sc-btn-dark" data-open-appointment style="margin-top:auto;">Book Appointment</button>
+    </div>
+  </div>
+
+  <section class="sc-page-banner">
+    <div class="sc-container sc-page-banner-inner">
+      <div>
+        <div class="sc-breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Appointment</span></div>
+        <h1>Schedule Your Visit: Book a Consultation Today</h1>
+      </div>
+      <button type="button" class="sc-btn sc-btn-dark" data-open-appointment>Open Quick Booking Popup &rarr;</button>
+    </div>
+  </section>
+
+  <section class="sc-section">
+    <div class="sc-container">
+      <div class="sc-hours-grid">
+        <div class="sc-form-card">
+          <span class="sc-eyebrow">Appointment Request</span>
+          <h2 style="margin-bottom:20px;">Book Directly Online</h2>
+          <form id="scInlineApptForm" novalidate>
+            <div class="sc-form-grid">
+              <div class="sc-field"><label for="apName">Full Name *</label><input class="sc-input" id="apName" name="name" type="text" placeholder="Your full name" required /></div>
+              <div class="sc-field"><label for="apEmail">Email Address *</label><input class="sc-input" id="apEmail" name="email" type="email" placeholder="you@example.com" required /></div>
+              <div class="sc-field"><label for="apPhone">Phone Number *</label><input class="sc-input" id="apPhone" name="phone" type="tel" placeholder="+1 (555) 234-5678" required /></div>
+              <div class="sc-field"><label for="apDate">Preferred Date *</label><input class="sc-input" id="apDate" name="date" type="date" required /></div>
+              <div class="sc-field sc-field--full">
+                <label for="apService">Treatment / Service</label>
+                <select class="sc-select" id="apService" name="service">
+                  <option value="Medical Dermatology">Medical Dermatology</option>
+                  <option value="Aesthetic Treatments">Aesthetic Treatments</option>
+                  <option value="Clinical Skincare Program">Clinical Skincare Program</option>
+                  <option value="Anti-Aging Treatment">Anti-Aging Treatment</option>
+                  <option value="Laser & Light Therapy">Laser &amp; Light Therapy</option>
+                  <option value="Skin Rejuvenation Care">Skin Rejuvenation Care</option>
+                </select>
+              </div>
+              <div class="sc-field sc-field--full"><label for="apMsg">Message</label><textarea class="sc-textarea" id="apMsg" name="message" placeholder="Tell us about your skin goals or preferred specialist..."></textarea></div>
+            </div>
+            <button type="submit" class="sc-btn sc-btn-dark" style="margin-top:20px;">Make Appointment &rarr;</button>
+          </form>
+        </div>
+
+        <div style="display:grid;gap:24px;">
+          <div class="sc-form-card">
+            <span class="sc-eyebrow">Your Saved Bookings</span>
+            <h3 style="margin-bottom:14px;">Recent Reservations</h3>
+            <div id="scSavedBookingsList"></div>
+          </div>
+
+          <div class="sc-hours-table" style="margin:0;">
+            <div class="sc-hours-row is-head"><span>Day</span><span>Clinic Hours</span></div>
+            <div class="sc-hours-row"><span>Monday – Friday</span><span>08:00 – 20:00</span></div>
+            <div class="sc-hours-row"><span>Saturday</span><span>09:00 – 17:00</span></div>
+            <div class="sc-hours-row"><span>Urgent Care</span><span>24/7 On-Call Triage</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sc-footer">
+    <div class="sc-container">
+      <div class="sc-footer-top">
+        <div class="sc-footer-brand"><a href="index.html" class="sc-logo"><img src="assets/images/logo-light.svg" alt="Skin Care Logo" /></a><p>Evidence-based dermatology and gentle aesthetic treatments designed for lifelong skin health.</p></div>
+        <div class="sc-footer-col"><h4>Company</h4><ul><li><a href="about-us.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="doctors.html">Our Specialists</a></li><li><a href="contact-us.html">Clinic Branches</a></li></ul></div>
+        <div class="sc-footer-col"><h4>Resources</h4><ul><li><a href="service-details.html">Treatment Guides</a></li><li><a href="pricing.html">Skincare Packages</a></li><li><a href="appointment.html">Schedule Visit</a></li><li><a href="help-center.html">Patient FAQ</a></li></ul></div>
+        <div class="sc-footer-col"><h4>Help</h4><ul><li><a href="help-center.html">Customer Support</a></li><li><a href="appointment.html">Booking Policy</a></li><li><a href="contact-us.html">Terms &amp; Conditions</a></li><li><a href="contact-us.html">Privacy Policy</a></li></ul></div>
+      </div>
+      <div class="sc-footer-bottom"><span>Copyright &copy; 2026 Skin Care. All rights reserved.</span><span>Clinical Dermatology &amp; Aesthetic Care</span></div>
+    </div>
+  </footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found — Skin Care</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="sc-header">
+    <div class="sc-container sc-header-inner">
+      <a href="index.html" class="sc-logo"><img src="assets/images/logo.svg" alt="Skin Care Logo" /></a>
+      <nav class="sc-nav">
+        <div class="sc-nav-item"><a href="index.html" class="sc-nav-link">Home</a></div>
+        <div class="sc-nav-item"><a href="about-us.html" class="sc-nav-link">About Us</a></div>
+        <div class="sc-nav-item">
+          <a href="services.html" class="sc-nav-link">Services &#9662;</a>
+          <div class="sc-dropdown"><a href="services.html">All Services</a><a href="service-details.html">Service Details</a></div>
+        </div>
+        <div class="sc-nav-item">
+          <a href="#" class="sc-nav-link is-active">Pages &#9662;</a>
+          <div class="sc-dropdown"><a href="doctors.html">Doctors</a><a href="pricing.html">Pricing</a><a href="appointment.html">Appointment</a><a href="help-center.html">Help Center</a><a href="404.html" class="is-active">404 Page</a></div>
+        </div>
+        <div class="sc-nav-item"><a href="contact-us.html" class="sc-nav-link">Contact Us</a></div>
+      </nav>
+      <div class="sc-header-actions">
+        <button type="button" class="sc-icon-btn" data-open-search aria-label="Search clinic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
+        <button type="button" class="sc-btn sc-btn-dark sc-btn-sm" data-open-appointment>Book Appointment</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="sc-section" style="text-align:center;padding:120px 0;">
+    <div class="sc-container" style="max-width:640px;">
+      <span class="sc-eyebrow">Error 404</span>
+      <h1 style="font-size:clamp(4rem,10vw,7rem);color:var(--sc-primary);line-height:1;">404</h1>
+      <h2 style="margin:12px 0 16px;">Sorry! Page Not Found</h2>
+      <p style="margin-bottom:32px;">The page you requested could not be located. Return to our homepage or book a consultation directly using our quick popup form.</p>
+      <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+        <a href="index.html" class="sc-btn sc-btn-dark">Back to Homepage &rarr;</a>
+        <button type="button" class="sc-btn sc-btn-outline" data-open-appointment>Book Appointment</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sc-footer">
+    <div class="sc-container">
+      <div class="sc-footer-bottom" style="padding-top:0;">
+        <span>Copyright &copy; 2026 Skin Care. All rights reserved.</span>
+        <span>Clinical Dermatology &amp; Aesthetic Care</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
