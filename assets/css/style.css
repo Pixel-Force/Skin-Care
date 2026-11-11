@@ -257,9 +257,9 @@ h4 { font-size: 1.25rem; }
 .sc-header {
   position: sticky;
   top: 0;
-  z-index: 90;
+  z-index: 150;
   width: 100%;
-  background-color: rgba(247, 246, 242, 0.9);
+  background-color: rgba(247, 246, 242, 0.94);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(28, 28, 28, 0.06);
   transition: background-color var(--sc-transition), box-shadow var(--sc-transition);
@@ -311,7 +311,7 @@ h4 { font-size: 1.25rem; }
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--sc-charcoal);
-  padding: 8px 4px;
+  padding: 14px 6px;
 }
 
 .sc-header--hero .sc-nav-link {
@@ -330,9 +330,10 @@ h4 { font-size: 1.25rem; }
 
 .sc-dropdown {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 0;
-  min-width: 210px;
+  margin-top: 6px;
+  min-width: 220px;
   padding: 10px;
   border-radius: var(--sc-radius-md);
   background-color: var(--sc-white);
@@ -340,15 +341,27 @@ h4 { font-size: 1.25rem; }
   box-shadow: var(--sc-shadow-md);
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transform: translateY(8px);
-  transition: all 0.22s ease;
-  z-index: 99;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 160;
 }
 
-.sc-nav-item:hover .sc-dropdown,
-.sc-nav-item:focus-within .sc-dropdown {
+.sc-dropdown::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -14px;
+  height: 14px;
+}
+
+.sc-nav-item:hover > .sc-dropdown,
+.sc-nav-item:focus-within > .sc-dropdown,
+.sc-nav-item.is-open > .sc-dropdown {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   transform: translateY(0);
 }
 
@@ -1879,7 +1892,7 @@ h4 { font-size: 1.25rem; }
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   .sc-nav {
     display: none;
   }

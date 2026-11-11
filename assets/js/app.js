@@ -94,6 +94,38 @@
         el.addEventListener("click", closeDrawer);
       });
     }
+
+    // Desktop dropdown hover-intent & click support
+    const navItems = qsa(".sc-nav-item").filter((item) => qs(".sc-dropdown", item));
+    navItems.forEach((item) => {
+      let closeTimer;
+      item.addEventListener("mouseenter", () => {
+        clearTimeout(closeTimer);
+        navItems.forEach((other) => {
+          if (other !== item) other.classList.remove("is-open");
+        });
+        item.classList.add("is-open");
+      });
+      item.addEventListener("mouseleave", () => {
+        closeTimer = setTimeout(() => item.classList.remove("is-open"), 140);
+      });
+
+      const link = qs(".sc-nav-link", item);
+      if (link && link.getAttribute("href") === "#") {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const wasOpen = item.classList.contains("is-open");
+          navItems.forEach((other) => other.classList.remove("is-open"));
+          if (!wasOpen) item.classList.add("is-open");
+        });
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".sc-nav-item")) {
+        navItems.forEach((item) => item.classList.remove("is-open"));
+      }
+    });
   }
 
   /* ------------------------------------------------------------------------
